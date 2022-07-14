@@ -106,6 +106,15 @@
 #botton:active{
     background-color: rgb(188, 154, 219);
 }
+@media (max-width:800px){
+    .main > .nav-btn{
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+}
 
     </style>
 </head>
@@ -116,10 +125,18 @@
         <img  src="C:\Users\vyank\Desktop\soc\game.png" alt="erroe">
         <h1 class="head"> XYZgames </h1>  
     </div>
+<div class="nav-btn">
+    <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+</div>
+
         <ul class="navigate_links"> 
-        <li>  <th> <a href="#" > About </a></th></li>
-        <li>  <th> <a href="#" > Our Games </a></th></li>
-        <li>  <th> <a href="#" > Blog </a></th></li>
+        <li>  <th> <a href="#" target="_blank"> About </a></th></li>
+        <li>  <th> <a href="#" target="_blank"> Our Games </a></th></li>
+        <li>  <th> <a href="#" target="_blank"> Blog </a></th></li>
         </ul>
      
      </div>
