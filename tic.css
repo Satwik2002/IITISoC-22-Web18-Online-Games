@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+   
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( -45deg, rgb(0, 0, 0), rgb(24, 22, 22), rgb(110, 100, 100));
+    animation: gradient 25s ease infinite;
+    background-size: 400% 400%;
+    
+}
+@keyframes gradient{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 9vw);
+    grid-template-columns: repeat(3, 9vw);
+    font-family: 'Baloo Bhaina 2';
+    position: relative;
+}
+
+.box{
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 6vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main{
+    background-color: rgb(230, 0, 255);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 20px 9%;
+    font-family: 'Grandstander', cursive;
+    font-weight: bolder;
+    color: azure;
+    height: 60px;
+    width: 82%;
+    font-size:49px ;
+}
+.display{
+  padding-top: 10px;
+   font-size: 35px;
+   font-family: 'Baloo Bhaina 2';
+   color: #f3e7f9;
+}
+.class-info{
+    padding-top: 10px;
+     font-size: 35px;
+     font-family: 'Baloo Bhaina 2';
+     color: blue;
+     color: #f3e7f9;
+  }
+.gamecontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f3e7f9;
+}
+      
+.br-0{
+border-right: 0;
+}
+
+.bl-0{
+border-left: 0;
+}
+
+.bt-0{
+border-top: 0;
+}
+
+.bb-0{
+border-bottom: 0;
+}
+
+#reset {
+margin: 0 23px;
+padding: 1px 18px;
+background: #f3e7f9;
+border-radius: 9px;
+cursor: pointer;
+font-family: 'Baloo Bhaina 2';
+font-size: 15px;
+font-weight: bolder;
+}
+
+
