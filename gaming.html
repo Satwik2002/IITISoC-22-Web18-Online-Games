@@ -11,6 +11,9 @@
 <link rel="stylesheet" href="C:\Users\vyank\Desktop\Project\game.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+
+
 <script src="game.js"></script>
 <title>Tic-Tac-Toe</title>
     <style>
@@ -106,78 +109,54 @@
 #botton:active{
     background-color: rgb(188, 154, 219);
 }
+
+.menu-btn i{
+      font-size: 24px;
+      cursor: pointer;
+      display: none;
+}
+#click{
+    display: none;
+}
 @media (max-width:800px){
-    .main > .nav-btn{
-        display: inline-block;
-        position: absolute;
-        right: 0px;
-        top: 0px;
+    .menu-btn i{
+      font-size: 24px;
+      cursor: pointer;
+      display:  block;
+}
+
+    .navigate_links {
+        
+        position: fixed;
+        top: 110px;
+        left: -100%;
+        background: rgba(110, 55, 159, 0.614);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: right;
+    right: 1px;
+    transition: all .5s ease-in-out;
+    
     }
-    .main > .nav-btn> label {
-         display: inline-block;
+    #click:checked ~ ul{
+        left: 0%;
 
-width: 50px;
-
-height: 50px;
-
-padding: 13px;
-
-} .main > .nav-btn > label:hover,.main #nav-check:checked ~ .nav-btn> label {
-     background-color: rgba(0, 0, 0, 0.3);
-
-}
-
-.main > .nav-btn> label > span {
-
-display: block;
-
-width: 25px;
-
-height: 18px;
-
-border-top: 2px solid #eee;
+    }
+    .navigate_links li{
+        margin: 40px 0;
+        align-items: center;
+        font-size: 18px;
+    justify-content: center;
+    }
 
 }
+ 
 
-.main > .navigate_links {
 
-position: absolute;
 
-display: block; width: 100%;
-
-background-color: #333;
-
-height: 0px;
-
-transition: all 0.3s ease-in;
-
-overflow-y: hidden;
-
-top: 50px; 
-left: 0px;
-
-}
-
-.main > .nav-links > a {
-
-display: block;
-
-width: 100%;
-
-}
-
-.main > #nav-check:not(:checked) .navigate_links { 
-    height: 8px;
-
-}
-
-.main > #nav-check:checked.navigate_links {
-
-height: calc(100vh - 50px); overflow-y: auto;
-
-}
-
-}
 
 
 
@@ -186,25 +165,27 @@ height: calc(100vh - 50px); overflow-y: auto;
   
 <body>
 <div class="main"> 
+    
     <div class="img"> 
         <img  src="C:\Users\vyank\Desktop\soc\game.png" alt="erroe">
         <h1 class="head"> XYZgames </h1>  
     </div>
-<div class="nav-btn">
-    <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-</div>
+    <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label> 
+    
 
         <ul class="navigate_links"> 
         <li>  <th> <a href="#" target="_blank"> About </a></th></li>
         <li>  <th> <a href="#" target="_blank"> Our Games </a></th></li>
         <li>  <th> <a href="#" target="_blank"> Blog </a></th></li>
-        </ul>
-     
+    </ul>
+       
+    
+        
      </div>
+
      <div class="tesxt">
         <img class="g1" src="C:\Users\vyank\Desktop\soc\project.jpg" alt="error">
         <h1> TIC-TAC-TOE </h1>
@@ -248,6 +229,6 @@ height: calc(100vh - 50px); overflow-y: auto;
         <a href="#" id="botton" target="_blank"> Play Now </a>
 
      </div>
-
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
