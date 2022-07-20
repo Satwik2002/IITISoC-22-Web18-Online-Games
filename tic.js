@@ -1,13 +1,13 @@
 
-let turn = "X"
-let gameover = false;
+let turn = "X"  // a variable 'X' that display on board
+let gameover = false; // a variable to break after anyone who wins
 
 
-const changeturn = ()=>{
+const changeturn = ()=>{     // a function that change turn i.e if it is 'X' then 'O' is next one
     return turn === "X"? "0": "X"
 }
 
-const checkWin = ()=>{
+const checkWin = ()=>{    // a variable w
     let boxtext = document.getElementsByClassName('boxtext');
     let wins = [
         [0, 1, 2],
@@ -26,11 +26,11 @@ const checkWin = ()=>{
             document.querySelector('.info').innerText = boxtext[e[0]].innerText + " Won"
             gameover = true
         }
-        if( (boxtext[e[1]].innerText !== '') && (boxtext[e[0]].innerText !== '') && (boxtext[e[2]].innerText !== '') ){
-            document.querySelector('.info').innerText = "Tie"
-            gameover = true
+        //if( ((boxtext[e[1]].innerText === boxtext[e[0]].innerText) && (boxtext[e[1]].innerText !== boxtext[e[2]].innerText)) || ((boxtext[e[1]].innerText === boxtext[e[2]].innerText) && (boxtext[e[0]].innerText !== boxtext[e[2]].innerText)) || ((boxtext[e[2]].innerText === boxtext[e[0]].innerText) && (boxtext[e[1]].innerText !== boxtext[e[2]].innerText)) && (boxtext[e[1]].innerText !== '') && (boxtext[e[0]].innerText !== '') && (boxtext[e[1]].innerText !== '') ){
+            //document.querySelector('.info').innerText = "Tie"
+           // gameover = true
             
-        }
+       // }
     
         
         
