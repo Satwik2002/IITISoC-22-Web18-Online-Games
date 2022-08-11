@@ -29,26 +29,10 @@ body{
         background-position: 0% 50%;
     }
 }
-.container{
-    display: grid;
-    grid-template-rows: repeat(3, 9vw);
-    grid-template-columns: repeat(3, 9vw);
-    font-family: 'Baloo Bhaina 2';
-    position: relative;
-}
-
-.box{
-    border: 2px solid rgb(255, 255, 255);
-    font-size: 6vw;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 .main{
-    background-color: rgb(230, 0, 255);
+    background-color:hsl(42, 99%, 46%);
     display: flex;
     justify-content:center;
     align-items: center;
@@ -66,46 +50,46 @@ body{
    font-family: 'Baloo Bhaina 2';
    color: #f3e7f9;
 }
-.class-info{
-    padding-top: 10px;
-     font-size: 35px;
-     font-family: 'Baloo Bhaina 2';
-     color: blue;
-     color: #f3e7f9;
-  }
-.gamecontainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #f3e7f9;
-}
-      
-.br-0{
-border-right: 0;
-}
-
-.bl-0{
-border-left: 0;
-}
-
-.bt-0{
-border-top: 0;
-}
-
-.bb-0{
-border-bottom: 0;
-}
-
-#reset {
-margin: 0 23px;
-padding: 1px 18px;
-background: #f3e7f9;
-border-radius: 9px;
-cursor: pointer;
-font-family: 'Baloo Bhaina 2';
-font-size: 15px;
-font-weight: bolder;
-}
 
 
+
+
+
+   .board {
+    padding-top: 60px;
+    margin: auto;
+    width: 350px;
+    
+   }
+   .board button {
+    height: 100px;
+    width: 100px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 3em;
+    background-color: hsl(42, 82%, 74%);
+    
+   }
+   button{
+    border: none;
+   }
+   #messages{
+    font-size: 27px;
+    font-family: 'Baloo Bhaina 2'; 
+    color: rgb(255, 255, 255);
+    text-align: center;
+   }
+   #name{
+    text-align: center;
+    font-size: 27px;
+    font-family: 'Baloo Bhaina 2'; 
+    color: rgb(255, 255, 255);
+   }
+   .low {
+    padding: 3px;
+    margin: 0px;
+    line-height: 33px;
+}
