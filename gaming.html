@@ -15,7 +15,7 @@
 
     <style>
         body {
-            background-color: black;
+            background-color: #0d0d12;
             margin: 0px;
         }
 
@@ -27,7 +27,7 @@
             z-index: -2;
             top: 0px;
             position: absolute;
-            background: url(scot3.jpg) no-repeat center 90px;
+            background: url(backg.jpg) no-repeat center 90px;
             background-size: 100% 100%;
         }
 
@@ -48,8 +48,7 @@
             width: 71%;
             padding: 0px;
             float: right;
-
-
+            margin-right: 20px;
         }
 
         .navbar-list {
@@ -63,16 +62,6 @@
             /* background: black; */
 
         }
-
-
-
-        /* .headeractions {
-            background-color: red;
-            margin-left: 80px;
-            padding-top: 27px;
-            width: 25%;
-            margin-right: 10px;
-        } */
 
         .header {
             margin: 0px;
@@ -110,24 +99,6 @@
             font-size: 30px;
             color: rgb(255, 248, 248);
             background-color: hsl(42, 99%, 46%);
-            /* background: linear-gradient(90deg, hsl(42, 84%, 68%), hsl(42, 99%, 46%), hsl(42, 96%, 20%)); */
-            animation: gradient 25s ease infinite;
-            background-size: 400% 400%;
-            /* transform: skewX(45deg); */
-        }
-
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
         }
 
         .intro {
@@ -137,6 +108,7 @@
             margin-top: 115px;
             margin-bottom: 0px;
             padding: 50px;
+            padding-bottom: 0px;
             font-size: 30px;
         }
 
@@ -172,6 +144,7 @@
         .readmore {
             display: flex;
             flex-direction: row;
+            margin: 0px 0px 50px 3px;
         }
 
         .cc {
@@ -208,7 +181,7 @@
             flex-direction: row;
         }
 
-        .games {
+        .features {
             display: flex;
             flex-direction: column;
             color: aliceblue;
@@ -216,18 +189,23 @@
             align-items: center;
         }
 
-        .games::before {
+        .features::before {
             opacity: 0.6;
             content: '';
             width: 100%;
-            height: 340%;
+            height: 250%;
             z-index: -2;
-            top: 712px;
+            top: 699px;
             position: absolute;
             background: url(scot9.png) center center;
             /* background-size: 100% 100%; */
             background-repeat: repeat;
 
+        }
+
+        .games{
+            display: flex;
+            flex-direction: row;
         }
 
         .text3 {
@@ -238,6 +216,7 @@
             font-size: 45px;
             font-family: 'Acme', sans-serif;
             color: rgb(255, 255, 255);
+            margin-top: 10px;
         }
 
         .text5 {
@@ -263,8 +242,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 500px;
-
+            width: 310px;
+            height: 350px;
         }
 
         #botton {
@@ -273,8 +252,6 @@
             border-radius: 8px;
             border: none;
             font-size: 20px;
-            margin-left: 1em;
-            margin-top: 15px;
             cursor: pointer;
             transition: colour;
             transition-duration: 1s;
@@ -292,15 +269,15 @@
         }
 
         .g2 {
-            border-radius: 20px;
-            height: 200px;
-            width: 400px;
+            border-radius: 15px;
+            height: 170px;
+            width: 330px;
         }
 
         .g3 {
-            border-radius: 20px;
-            height: 300px;
-            width: 400px;
+            border-radius: 15px;
+            height: 250px;
+            width: 330px;
         }
 
         h1 {
@@ -310,7 +287,7 @@
         }
 
         p {
-            font-size: 14px;
+            font-size: 13px;
             margin: 20px;
             font-family: 'ABeeZee', sans-serif;
         }
@@ -342,11 +319,13 @@
             background-color: rgb(255, 255, 255);
             width: 32%;
             height: 500px;
+            border-radius: 20px;
         }
 
         .news1 {
             width: 100%;
-            height: 280px;
+            height: 90%;
+            border-radius: 20px 20px 0px 0px;
         }
 
         .news4 {
@@ -354,6 +333,7 @@
             font-size: 60px;
             font-family: 'Acme', sans-serif;
             margin-top: 100px;
+
         }
 
 
@@ -367,16 +347,17 @@
             display: none;
         }
 
+
         @media (max-width:800px) {
             .menu-btn i {
                 padding-top: 50px;
-                border:2px solid hsl(42, 99%, 46%);
+                border: 2px solid hsl(42, 99%, 46%);
                 border-radius: 5px;
                 background-color: hsl(237, 12%, 29%);
-                font-size: 27px;
+                font-size: 22px;
                 cursor: pointer;
                 display: block;
-                margin: 50px;
+                margin: 23px;
                 margin-right: 20px;
                 padding: 8px;
                 display: flex;
@@ -397,7 +378,7 @@
                 transition: all .5s ease
             }
 
-            #click:checked ~ ul{
+            #click:checked~nav ul .navbar-list {
                 left: 0%;
 
             }
@@ -409,7 +390,192 @@
                 justify-content: center;
             }
 
+            .home::before {
+                width: 100%;
+                height: 50%;
+            }
 
+            .container1 {
+                height: 90px;
+            }
+
+            .logo {
+                padding: 32px;
+                width: 30%;
+                font-size: 28px;
+            }
+
+            .intro {
+                font-size: 23px;
+                padding: 50px;
+                padding-left: 25px;
+                padding-bottom: 0px;
+            }
+
+            span {
+                font-size: 40px;
+            }
+
+            .rr {
+                height: 38px;
+                width: 150px;
+                margin: 20px 0px auto 0px;
+                font-size: 17px;
+            }
+
+            .readmore {
+                margin: 0px 0px 52px -7px;
+            }
+
+            .cc {
+                height: 38px;
+                width: 29px;
+                margin: 20px 0px auto -41px;
+            }
+
+            .home {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .skribbl {
+                height: 70px;
+                width: 100%;
+                margin-top: 0px;
+            }
+
+            .avatar {
+                margin-top: 0px;
+                /*background-color: hsla(240, 25.8%, 17.5%, 0.75); */
+                background: radial-gradient(circle, hsl(240, 8%, 19.6%), hsl(249, 23.8%, 16.5%));
+                padding: 45px 0px;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .features {
+                display: flex;
+                flex-direction: column;
+                color: aliceblue;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .features::before {
+                top: 677px;
+                height: 200%;
+            }
+
+            .games{
+                flex-direction: column;
+            }
+
+            .cont {
+                flex-direction: column;
+            }
+
+            .news {
+                width: 50%;
+                height: 480px;
+                margin-bottom: 10px;
+            }
+
+        }
+
+        .text6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 30px 200px;
+            color: white;
+            font-size: 27px;
+            font-family: 'Acme', sans-serif;
+        }
+
+        .about {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(13, 13, 18);
+            margin-bottom: 50px;
+        }
+
+        footer {
+            padding: 80px 100px 10px 100px;
+            border-radius: 50px 50px 0px 0px;
+            background-color: hsl(240, 10%, 11.8%);
+        }
+
+        .footer {
+            color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: row;
+            background-color: hsl(42, 99%, 46%);
+            border-radius: 20px;
+        }
+
+        .info {
+            width: 50%;
+            text-align: center;
+            border-radius: 100px 0px;
+        }
+
+        .contactus {
+            width: 50%;
+            text-align: center;
+
+        }
+
+        .list-inline {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li {
+            list-style: none;
+            text-align: center;
+            margin: 10px 0px;
+
+        }
+
+        ul.name{
+            padding: 0px;
+            border-right: 2px solid black;
+        }
+
+        ul {
+            padding: 0px;
+        }
+
+        .icon2 {
+            width: 30px;
+            height: 30px;
+            margin: 2px;
+            transition: transform 1s ease 0s;
+        }
+
+        .icon2:hover {
+            transform: rotate(360deg);
+            cursor: pointer;
+        }
+
+        h1 {
+            font-family: 'Acme', sans-serif;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            margin: 0px;
+        }
+
+        .copyright {
+            color: white;
+            text-align: center;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -419,12 +585,13 @@
         <div>
             <div class="container1">
                 <a href="#" class="logo">SCOT GAMING</a>
+            <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
                 <nav class="navbar">
                     <ul class="navbar-list">
                         <li class="navbar-list-items"><a href="#home" class="navbar-li-link">Home</a></li>
                         <li class="navbar-list-items"><a href="#about" class="navbar-li-link">About</a></li>
-                        <li class="navbar-list-items"><a href="#blog" class="navbar-li-link">Blog</a></li>
                         <li class="navbar-list-items"><a href="#games" class="navbar-li-link">Games</a></li>
+                        <li class="navbar-list-items"><a href="#more" class="navbar-li-link">More..</a></li>
                     </ul>
                 </nav>
                 <input type="checkbox" id="click">
@@ -443,88 +610,131 @@
             </div>
             <span>MATCHES</span>
             <div class="text2">Gear your Computers and let the magic begins. </div>
-            <div class="readmore">
+            <!-- <div class="readmore">
                 <div class="rr"><a href="#about">Read More</a>
                 </div>
                 <div class="cc">/</div>
+            </div> -->
+        </div>
+        <div class="readmore">
+            <div class="rr"><a href="#about">Read More</a>
             </div>
+            <div class="cc">/</div>
         </div>
     </div>
     <div class="avatar">
         <img src="scot99.png" alt="Error" class="skribbl">
         <img src="scot99.png" alt="Error" class="skribbl">
     </div>
-    <div class="games">
+    <div class="features">
 
         <div class="text3">
             <span class="text4">LATEST&nbsp;</span>
             <span class="text5">GAMES</span>
         </div>
-        <img src="scot12.png" alt="Hatt bhosdike" class="line">
+        <img src="scot12.png" alt="Error" class="line">
         <div class="games">
-            <div class="tesxt">
-                <img class="g2" src="tictac.jpg" alt="error">
-                <h1> TIC-TAC-TOE </h1>
-                <p> A two player game test your brain!!!! </p>
-                <a href="page1.html" id="botton" target="_blank"> Play Now </a>
-
-
+            <div class="t1">
+                <div class="tesxt">
+                    <img class="g2" src="tictac.jpg" alt="error">
+                    <h1> TIC-TAC-TOE </h1>
+                    <p> A two player game test your brain!!!! </p>
+                    <a href="page1.html" id="botton" target="_blank"> Play Now </a>
+                </div>
+                
+                <div class="tesxt">
+                    <img class="g2" src="scot8.jpg" alt="error">
+                    <h1> Skribbl.io </h1>
+                    <p> Draw Guess And Enjoy!!!! </p>
+                    <a href="./skribbl/index.html" id="botton" target="_blank"> Play Now </a>
+                </div>   
             </div>
-            <div class="tesxt">
-                <img class="g3" src="scot7.jpeg" alt="error">
-                <h1>Connect 4</h1>
-                <p> A two player game test your brain!!!! </p>
-                <a href="../static/page1.html" id="botton" target="_blank"> Play Now </a>
+            <div class="t1">
+                <div class="tesxt">
+                    <img class="g2" src="bgc4.jpg" alt="error">
+                    <h1>Connect 4</h1>
+                    <p> Join the correct dots and Win the game!!!! </p>
+                    <a href="./connect4/index.html" id="botton" target="_blank"> Play Now </a>
+                </div>
 
-
-            </div>
-            <div class="tesxt">
-                <img class="g2" src="scot8.jpg" alt="error">
-                <h1> Skribbl.io </h1>
-                <p> A two player game test your brain!!!! </p>
-                <a href="skribbl/index.html" id="botton" target="_blank"> Play Now </a>
-
-
+                <div class="tesxt">
+                    <img class="g2" src="scot100.jpg" alt="error">
+                    <h1> UNO </h1>
+                    <p> Have fun with friends online with UNO!!!! </p>
+                    <a href="../static/page1.html" id="botton" target="_blank"> Play Now </a>
+                </div>
             </div>
         </div>
     </div>
+    </div>
     <div class="blog">
         <div class="text3">
-            <span class="text4">LATEST NEWS &&nbsp;</span>
-            <span class="text5">ARTICLES</span>
+            <span class="text4">UPCOMING &nbsp;</span>
+            <span class="text5">GAMES</span>
         </div>
         <img src="scot12.png" alt="Error" class="line">
         <div class="cont">
             <div class="news">
-                <img src="scot8.jpg" alt="Error" class="news1">
-                <h1 class="news2">Why people play games?</h1>
-                <p class="news3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reiciendis temporibus
-                    itaque voluptatibus tempora ad sint harum soluta, nam ut, cumque suscipit maxime exercitationem,
-                    vitae deleniti laudantium quisquam esse error. Unde esse maxime ad enim quaerat cum quod deserunt,
-                    numquam fugiat hic totam commodi aliquid dignissimos! Voluptate nobis nostrum alias.</p>
+                <img src="scot45.jpg" alt="Error" class="news1">
+                <h1 class="news2">Coming Soon.....</h1>
             </div>
             <div class="news">
-                <img src="scot8.jpg" alt="Error" class="news1">
-                <h1 class="news2">Why people play games?</h1>
-                <p class="news3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reiciendis temporibus
-                    itaque voluptatibus tempora ad sint harum soluta, nam ut, cumque suscipit maxime exercitationem,
-                    vitae deleniti laudantium quisquam esse error. Unde esse maxime ad enim quaerat cum quod deserunt,
-                    numquam fugiat hic totam commodi aliquid dignissimos! Voluptate nobis nostrum alias.</p>
+                <img src="scot46.jpg" alt="Error" class="news1">
+                <h1 class="news2">Coming Soon.....</h1>
             </div>
             <div class="news">
-                <img src="scot8.jpg" alt="Error" class="news1">
-                <h1 class="news2">Why people play games?</h1>
-                <p class="news3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reiciendis temporibus
-                    itaque voluptatibus tempora ad sint harum soluta, nam ut, cumque suscipit maxime exercitationem,
-                    vitae deleniti laudantium quisquam esse error. Unde esse maxime ad enim quaerat cum quod deserunt,
-                    numquam fugiat hic totam commodi aliquid dignissimos! Voluptate nobis nostrum alias.</p>
+                <img src="scot30.jpg" alt="Error" class="news1">
+                <h1 class="news2">Coming Soon.....</h1>
             </div>
         </div>
     </div>
-    <div class="blog">
-    <div class="text4">ABOUT</div>
-    <div class="text4">SCOT is a free browser gaming website. SCOT exclusively contains multiplayer games like, scribbl, connect four, Othello, and tic-tac-toe. You can enjoy playing fun games without interruptions from downloads, intrusive ads, or pop-ups. Just load up your favorite games instantly in your web browser and enjoy the experience. Not just this, you can also invite your friends into a room or join another room. You can play our games on desktop or mobile devices. That includes everything from desktop PCs, laptops, and Chromebooks, to the latest smartphones and tablets from Apple and Android.</div>
+    <div class="about">
+        <div class="text5">ABOUT</div>
+        <div class="text6">SCOT is a free browser gaming website. SCOT exclusively contains multiplayer games like,
+            scribbl, connect four, Othello, and tic-tac-toe. You can enjoy playing fun games without interruptions from
+            downloads, intrusive ads, or pop-ups. Just load up your favorite games instantly in your web browser and
+            enjoy the experience. Not just this, you can also invite your friends into a room or join another room. You
+            can play our games on desktop or mobile devices. That includes everything from desktop PCs, laptops, and
+            Chromebooks, to the latest smartphones and tablets from Apple and Android.</div>
     </div>
+    <footer>
+        <div class="footer">
+            <div class="info">
+                <h1>Our Team</h1>
+                <ul class="name">
+                    <li>
+                        <h3>Tanvi Warvadekar</h3>
+                    </li>
+                    <li>
+                        <h3>Vyankatesh Chavan</h3>
+                    </li>
+                    <li>
+                        <h3>Bhimanshu Durge</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="contactus">
+                <h1>Contact Us</h1>
+                <ul>
+                    <li>
+                        <h3>Need Help</h3>
+                    </li>
+                    <li>
+                        <h3>+91-9876543210</h3>
+                    </li>
+                </ul>
+                <div class="icons">
+                    <ul class="list-inline">
+                        <li class="icon1"><img src="insta.png" alt="Error" class="icon2"></li>
+                        <li class="icon1"><img src="2.png" alt="Error" class="icon2"></li>
+                        <li class="icon1"><img src="3.png" alt="Error" class="icon2"></li>
+                        <li class="icon1"><img src="4.png" alt="Error" class="icon2"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">2022 © Society, All Rights Reserved</div>
+    </footer>
 
 
 
